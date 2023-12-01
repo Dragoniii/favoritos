@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Formuário</title>
+  </head>
+  <body>
+    <form id="formulario" onsubmit="enviarFormulario(event)">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+
+        <label for="nome">Nome completo</label>
+        <input class="input" type="text" id="nome" />
+
+        <label for="email">Email</label>
+        <input class="input" type="email" id="email" />
+
+        <label for="experiencia">Tempo de experiência (em anos)</label>
+        <input class="input" type="number" id="experiencia" />
+
+        <label for="nascimento">Data de nascimento</label>
+        <input class="input" type="date" id="nascimento" />
+
+        <label for="sobremim">Nos conte sobre você:</label>
+        <textarea class="input" id="sobremim">
+Sou dev FullStack e trabalho na Growdev</textarea
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações profissionais</legend>
+
+        <label for="ultimo_cargo">Ultimo cargo</label>
+        <input class="input" type="text" id="ultimo_cargo" />
+
+        <label for="pretensao_salarial">Pretensão salarial</label>
+        <input class="input" type="number" id="pretensao_salarial" />
+
+        <span class="span">Selecione seu cargo:</span>
+        <input type="radio" id="fullstack" name="cargo" value="FullStack" />
+        <label for="fullstack">FullStack</label><br />
+        <input type="radio" id="frontend" name="cargo" value="FrontEnd" />
+        <label for="frontend">FrontEnd</label><br />
+        <input type="radio" id="backend" name="cargo" value="BackEnd" />
+        <label for="backend">BackEnd</label>
+
+        <span class="span"
+          >Selecione as linguagens que você tem proficiência:</span
+        >
+        <input type="checkbox" id="html" name="linguagens" value="HTML" />
+        <label for="html">HTML</label>
+        <input
+          type="checkbox"
+          id="javascript"
+          name="linguagens"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="css" name="linguagens" value="CSS" />
+        <label for="css">CSS</label>
+        <input type="checkbox" id="react" name="linguagens" value="React" />
+        <label for="react">React</label>
+        <input type="checkbox" id="node" name="linguagens" value="Node JS" />
+        <label for="node">Node JS</label>
+        <input type="checkbox" id="express" name="linguagens" value="Express" />
+        <label for="express">Express</label>
+        <input
+          type="checkbox"
+          id="typescript"
+          name="linguagens"
+          value="TypeScript"
+        />
+        <label for="typescript">TypeScript</label>
+
+        <span class="span">Selecione seu nível de domínio em JavaScript:</span>
+        <select name="dominio_js">
+          <option value="nao_possuo">Não possuo</option>
+          <option value="iniciante">Iniciante</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="solido">Sólido</option>
+          <option value="avancado">Avançado</option>
+        </select>
+      </fieldset>
+      <button type="reset">Apagar formulário</button>
+      <button type="submit">Enviar formulário</button>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>

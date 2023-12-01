@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Formulário</h1>
+  <form id="form">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+      <br>
+      <br>
+      <label for="password">Senha:</label>
+      <input type="password" placeholder="Digite sua senha" name="password" id="password" required>
+
+      <br>
+      <br>
+
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado">
+        <option value="" selected> Selecione</option>
+        <option value="RS">Rio Grande Do Sul</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+      </select>
+
+    </fieldset>
+ 
+
+    <fieldset>
+      <legend>Experiencias</legend>
+      <input type="radio" name="cargo" id="opcao1" value="frontEnd" checked >
+      <label for="cargo">Front-end</label>
+
+      <input type="radio" name="cargo" id="opcao2" value="backEnd">
+      <label for="cargo">Back-end</label>
+
+      <input type="radio" name="cargo" id="opcao3" value="fullStack">
+      <label for="cargo">Full stack</label> <br/><br/>
+
+      <input type="checkbox" name="habilidades" id="opcaoUm" value="css">
+      <label for="opcao1">CSS</label>
+
+      <input type="checkbox" name="habilidades" id="opcaoDois" value="html">
+      <label for="opcao2">HTML</label>
+
+      <input type="checkbox" name="habilidades" id="opcaoTres" value="js">
+      <label for="opcao3">JS</label><br><br>
+
+    <label for="descricao">Descricao:</label> <br>
+     <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+
+    </fieldset>
+
+   
+     <button type="submit">Cadastrar</button>
+  </form>
+  
+
+
+
+  <script src="/script.js"></script>
+</body>
+</html>
